@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athletech Landing Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="/images/png/Athletech-logo.png" alt="Athletech logo"></div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <button class="signup-btn">Sign Up</button>
+    </nav>
+  </header>
+
+  <section id="home" class="welcome-section">
+    <div class="slider">
+      <div class="slides">
+        <img src="/images/pacha-mma1.jpg" alt="Athletech Image 1">
+        <img src="/images/pacha-mma2.jpg" alt="Athletech Image 2">
+        <img src="/images/pacha-mma3.jpg" alt="Athletech Image 3">
+        <img src="/images/pacha-mma4.jpg" alt="Athletech Image 4">
+      </div>
+
+      <!-- <button id="prevBtn">❮</button> -->
+      <button id="prevBtn"><img src="/images/svg/arrow-left.svg" alt="arrow-left"></button>
+      <!-- <button id="nextBtn">❯</button> -->
+      <button id="nextBtn"><img src="/images/svg/arrow-right.svg" alt="arrow-right"></button>
+    </div>
+
+    <div class="indicators">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+  </section>
+  
+  
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>"Working with Coach Hudson has been life-changing! 
+        The online courses are clear, concise, and packed with value. 
+        The community forum adds extra motivation as I connect with others on the same journey. 
+        I couldn’t recommend this program enough!" <br>
+        — Alex M., MMA Enthusiast
+    </p> 
+    <p>"The personal coaching sessions with Coach Hudson helped me improve my technique and stamina dramatically. 
+        The videos were well-organized and easy to follow, even for beginners like me. 
+        Being part of the forum is like having a team by my side!" <br>
+        — Jordan S., Beginner Fighter
+    </p>
+    <p>"This membership gave me access to exclusive content that I couldn’t find anywhere else. 
+        Coach Hudson’s expertise really shines through. 
+        The progress I’ve made in just a few months has been incredible." <br>
+        — Taylor L., Competitive Athlete
+    </p>
+    <p>"I joined Hudson program looking to refine my MMA skills, 
+        and it exceeded all expectations. 
+        The community forum is an amazing resource,
+        and the personalized feedback from the coach helped me break through plateaus in my training." <br>
+        — Chris K., Aspiring Pro Fighter
+    </p>
+    <p>"The combination of online video courses and community support is unmatched. 
+        I love how Coach Hudson makes everything accessible, no matter your skill level. 
+        Highly recommend this for anyone serious about their training." <br>
+        — Samantha R., Amateur MMA Athlete
+    </p>
+
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At [Coach's Name] MMA Academy, we’re dedicated to helping athletes of all levels unlock their full potential. 
+        With years of professional experience in mixed martial arts, 
+        Hudson offers a unique approach to training that blends technique, discipline, and mental toughness. 
+        Whether you’re a beginner or a seasoned fighter, 
+        our comprehensive online courses and supportive community are designed to elevate your skills and keep you motivated every step of the way. 
+        Join us and start your journey toward becoming the best version of yourself—both inside and outside the ring!
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-table">
+      <div class="plan">Basic - $19.99/month</div>
+      <div class="plan">Pro - $49.99/month</div>
+      <div class="plan">Elite - $99.99/month</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">Logo</div>
+      <div class="footer-center">Powered by <a href="https://athletech.com">Athletech</a></div>
+      <div class="footer-right">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+    <p>© 2024 Athletech. All rights reserved.</p>
+  </footer>
+
+  <script src="javascript/slider.js"></script>
+</body>
+</html>

@@ -84,3 +84,5 @@ sliderContainer.addEventListener('touchend', (e) => {
     goToPrevSlide(); // Swipe right to go to previous slide
   }
 });
+
+

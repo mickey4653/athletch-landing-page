@@ -15,7 +15,13 @@
           /></a>
         </div>
         <nav class="navbar">
-          <ul class="nav-links">
+          <div class="navbar-toggle" id="navbarToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+          <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
@@ -116,7 +122,7 @@
             </button>
           </div>
         </div>
-<div class="vertical-line"></div>
+        <div class="vertical-line"></div>
         <div class="about-us">
           <h2>About Us</h2>
           <p>
@@ -141,7 +147,11 @@
         <div class="services-left">
           <button class="learn-more-btn">
             Learn more
-            <img class="learnmore-arrow-img" src="/images/svg/learnmore-arrow.svg" alt="learnmore-arrow" />
+            <img
+              class="learnmore-arrow-img"
+              src="/images/svg/learnmore-arrow.svg"
+              alt="learnmore-arrow"
+            />
           </button>
           <div class="course-box">
             <p>Our Courses</p>
@@ -159,7 +169,16 @@
         <!-- Right Side: Play Button Section -->
         <div class="services-right">
           <div class="video-box">
-           
+            <iframe
+              width="480"
+              height="280"
+              src="https://www.youtube.com/embed/fzQN4i6ED2k?si=uoHM8gkkv86acTJY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
@@ -167,14 +186,69 @@
 
     <section id="pricing">
       <h2>Pricing</h2>
-      <div class="pricing-table">
-        <div class="plan">Basic - $19.99/month</div>
-        <div class="plan">Pro - $49.99/month</div>
-        <div class="plan">Elite - $99.99/month</div>
+
+      <div class="prices-container">
+        <div class="pricing-cards">
+          <div class="card">
+            <h3>Basic</h3>
+            <ul>
+              <li>Access to online video courses</li>
+              <li>Community forum access</li>
+              <li>Monthly live Q&A sessions</li>
+            </ul>
+            <div class="basic-price">
+              <div class="price">$19.99/month</div>
+              <button>Learn more</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Pro</h3>
+            <ul>
+              <li>Everything in Basic</li>
+              <li>Personalized training feedback</li>
+              <li>Exclusive content</li>
+              <li>Weekly updates</li>
+            </ul>
+            <div class="price">$49.99/month</div>
+            <button>Learn more</button>
+          </div>
+
+          <div class="card">
+            <h3>Elite</h3>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>1-on-1 coaching sessions</li>
+              <li>Access to premium courses</li>
+              <li>Priority support</li>
+            </ul>
+            <div class="price">$99.99/month</div>
+            <button>Learn more</button>
+          </div>
+        </div>
+
+        <!-- Right Side: Image Section -->
+        <div class="prices-right">
+          <div class="price-image-box">
+            <img
+              class="price-img"
+              src="/images/dc_hulk.jpg"
+              alt="Athletech Image 4"
+            />
+          </div>
+          <button class="price-learn-more-btn">
+            Learn more
+            <img
+              class="price-learnmore-arrow-img"
+              src="/images/svg/learnmore-arrow.svg"
+              alt="learnmore-arrow"
+            />
+          </button>
+        </div>
       </div>
     </section>
 
-    <footer>
+    <!-- <footer>
       <div class="footer-content">
         <div class="footer-left">Logo</div>
         <div class="footer-center">
@@ -187,8 +261,52 @@
         </div>
       </div>
       <p>© 2024 Athletech. All rights reserved.</p>
-    </footer>
+    </footer> -->
 
+    <footer>
+      <div class="footer-content">
+
+        <div class="footer-logo">
+          <a href="#"
+            ><img src="/images/png/Athletech-logo.png" alt="Athletech logo"
+          /></a>
+        </div>
+
+        <div class="footer-text">
+        <p>"Powered by Athletech"</p>
+        <p>© 2024 Athletech. All rights reserved.</p>
+      </div>
+        <div class="social-icons">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/svg/facebook.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/svg/instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            aria-label="Twitter"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/svg/twitter.svg" alt="Twitter" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="horizontal-line"></div>
+   
+    <script src="javascript/navbar.js"></script>
     <script src="javascript/imageSlide.js"></script>
     <script src="javascript/testimonialSlider.js"></script>
   </body>
